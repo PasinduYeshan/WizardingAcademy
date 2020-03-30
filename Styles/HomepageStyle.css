@@ -1,0 +1,69 @@
+*{ /*all the element*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Baloo 2', cursive;
+}
+
+.background{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    left: 0;  /*edges*/
+    right:0;
+    top:0;
+    bottom: 0;
+    z-index: -1; /*stack order*/
+}
+
+.container{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-gap: 0;
+    padding: 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-justify: auto;
+}
+
+.setOne{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 0;
+    padding: 0 0;
+    border-style: groove;
+}
+
+.setOne div{
+    display: grid;
+    width: 100%;
+    grid-gap: 0;
+    padding: 0 0;
+    border-style: groove;
+    border-color: red; 
+}
+
+.setTwo{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-gap: 0;
+    padding: 0 0;
+    border-style: groove;
+}
+
+.setTwo div{
+    display: grid;
+    width: 100%;
+    grid-gap: 0;
+    padding: 0 0;
+    border-style: groove;
+    border-color: red; 
+}

@@ -1,0 +1,223 @@
+*{ /*all the element*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Baloo 2', cursive;
+}
+
+.background{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    left: 0;  /*edges*/
+    right:0;
+    top:0;
+    bottom: 0;
+    z-index: -1; /*stack order*/
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    padding: 0 2rem;
+    
+}
+
+.img{
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img img{
+    width:500px;
+}
+
+
+.login-container{
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+form{
+    width: 360px;
+    height: 60%;
+    align-items: center;
+}
+
+.avatar{
+    width: 100px;
+}
+
+form h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color:#f5f1f1;
+}
+
+.input-div{
+    position: relative;
+    display:grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0 5px 0;
+    padding: 5px 0 5px 0;
+    border-bottom: 2px groove  #5b5b5e;
+}
+
+.input-div.one{
+    margin-top: 0;
+    background: none;
+}
+
+.input-div.two{
+    grid-template-columns: 7% 86% 7%;
+    margin-bottom: 4px;
+    
+}
+
+.i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #3d3d5c;
+}
+
+.i-eye{
+    display: flex;
+    color:  #3d3d5c;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.input-div > div{
+    background-color:transparent;
+    position: relative;
+    height: 45px;
+}
+
+.input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    outline : none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    font-family: 'Baloo 2', cursive;
+    color: rgb(253, 251, 251);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(112, 109, 109);
+    font-family: 'Baloo 2', cursive;
+    opacity: 1; /* Firefox */
+  }
+
+a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #6d6d74;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #38d39f;
+}
+
+.btn-submit{
+    position: relative;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    border-radius: 25px;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:'Baloo 2', cursive;
+    background-image: linear-gradient(to right, rgb(11, 184, 228),  #455fd4,  rgb(11, 184, 228));
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgb(236, 229, 229);
+    background-size: 200%;
+    transition: .5s;
+}
+
+.btn-submit:hover{
+    background-position: right;
+}
+
+#eye-btn{
+    background-color: transparent;
+    background-blend-mode: normal;
+    border-color: none;
+}
+
+#eye-icon{
+    background-color:transparent;
+    color: #3d3d5c;;
+}
+.error{
+    color: rgb(228, 101, 101) !important; 
+}
+
+
+@media screen and (max-width:1050px){
+    .container{
+        grid-gap: 5rem;
+    }
+}
+@media screen and (max-width:1000px){
+    form{
+        width: 290px;
+    }
+    .login-container{
+        width: 330px;
+    }
+    form h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+    }
+}
+@media screen and (max-width:900px){
+    .img{
+        display: none;
+    }
+    form{
+        width: 290px;
+    }
+    .login-container{
+        width: 330px;
+    }
+    .login-container{
+        justify-content: center;
+        align-items: center;
+    }
+}
