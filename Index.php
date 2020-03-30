@@ -26,7 +26,7 @@ if (isset($_POST["submit"])){
     }
     if (!array_filter($errors)){
         if($email = "artemis" and $password = "alohomora"){
-            header("Location: Mainpage/index.html");
+            header("Location: MainPage/index.html");
         }
     }
 }
@@ -54,7 +54,7 @@ if (isset($_POST["submit"])){
         <div class = "container">
             <div class = "login-container">
                 <div class = "form">
-                    <form action = "LogIn.php" method = "POST">
+                    <form action = "index.php" method = "POST">
 
                         <img class = "avatar" src = "Sources/profile_avatar.svg">
                         <h2>Apparition </h2>
