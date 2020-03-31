@@ -103,6 +103,11 @@ html,body{
   max-width: 100%;
 }
 
+/*-----------------Card------------------*/
+
+
+
+/*-------------Social-----------------*/
 .social a{
   font-size: 4.5em;
   padding: 3rem;
@@ -152,6 +157,10 @@ hr.light-100{
   width: 100%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
+}
+
+::selection{
+  background-color: transparent;
 }
 
 /*---Media Queries --*/
@@ -267,7 +276,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('img/fixedbackground.jpg');
   position: fixed;
   display: block;
   top: 0;

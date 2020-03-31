@@ -10,7 +10,7 @@ if (isset($_POST["submit"])){
     else{
         $email = $_POST["email"];
         
-            if ($email != "artemis"){
+            if ($email != "artemis" and $email != "Artemis"){
                 $errors["email"] = "Only a goddes can find what you seek";
             }
     }
@@ -38,9 +38,9 @@ if (isset($_POST["submit"])){
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Log In to PCCS Traffic System">
+        <meta name="description" content="Log in to YeshanWizardWorld">
         <meta name="keywords" content="HTML,CSS,JavaScript">
-        <meta name="author" content="PCCS">
+        <meta name="author" content="Yeshan">
         <meta name = "viewport" content = "width=device-width, initial scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel = "stylesheet" href = "Styles/LogInStyle.css">
